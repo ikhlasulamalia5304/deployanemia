@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.schemas import BloodInput
+from fastapi.middleware.cors import CORSMiddleware
 from app.predictors import predict_blood
 
 app = FastAPI(
